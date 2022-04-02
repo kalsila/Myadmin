@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyAdmin</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!----------  font awesone-------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <!----------------------nav--------------->
+<section>
+  <div class="navbar-fixed  blue accent-4  ">
+    <nav class="nav-warper  blue accent-4 ">
+      <div class="container">
+        <a href="#" class="brand-logo">MyAdmin</a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="Posts.html">Posts</a></li>
+        <li><a href="Categories.html">Categories</a></li>
+        <li><a href="Comments.html">Comments</a></li>
+        <li><a href="Users.html">Users</a></li>
+        <li>
+          <a href="#" data-target="slide-out" class="sidenav-trigger  text-cyan "><i class="material-icons">menu</i></a>
+        </li>
+  
+      </ul>
+    </nav>
+  </div>
+    
+
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="images/office.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+        <a href="#name"><span class="white-text name">Kalsila</span></a>
+        <a href="#email"><span class="white-text email">Kalsisi@gmail.com</span></a>
+      </div></li>
+      <li><a href="#"><i class="material-icons">cloud</i>Dashboard</a></li>
+      <li><a href="Posts.html">Posts</a></li>
+      <li><a href="Categories.html">Categories</a></li>
+      <li><a href="Comments.html">Comments</a></li>
+      <li><a href="Users.html">Users</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader"></a></li>
+      <li><a class="subheader"></a></li>
+      <li><a class="subheader">Account Controls</a></li>
+      <li><a class="waves-effect" href="#!">Logout</a></li>
+    </ul>
+      </section>
+      <!-----------------------table------------------------------------- -->
+      <section id="Posts" >
+        <div class="container">
+          <div class="row">
+            <div class="col-9">
+             <div class="card">
+               <div class="card-body">
+                 <h5>Les posts recents</h5>
+                 <table class="table table-striped">
+                   <thead class="table table-striped">
+                     <tr  >
+                       <th scope="col"></th>
+                       <th scope="col">Titre</th>
+                       <th scope="col">Category</th>
+                       <th scope="col">Date du post</th>
+                       <th scope="col"></th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                     <tr class="grey lighten-5">
+                       <th scope="row"></th>
+                       <td> post one</td>
+                       <td>Wep Developement</td>
+                       <td>Octo 0,2019</td>
+                       <td><button type="button" class=" btn btn blue accent-4  ">Details</a></button></td>
+                     </tr>
+                     <tr>
+                       <th scope="row"></th>
+                       <td>Post Two</td>
+                       <td>Tech Graphic Design</td>
+                       <td>Janvier 45,2022</td>
+                       <td><button type="button" class="btn btn blue accent-4">Details</button></td>
+                     </tr>
+                     <tr class="grey lighten-5">
+                       <th scope="row"></th>
+                       <td>Post Two</td>
+                       <td>Tech Gadgets</td>
+                       <td>Janvier 45,2022</td>
+                       <td><button type="button" class="btn btn blue accent-4">Details</button></td>
+                     </tr>
+                   </tbody>
+                 </table>
+              
+                <table class="table table-striped">
+               <tbody>
+                 <tr>
+                   <th scope="row"></th>
+                   <td> post Four</td>
+                   <td>Wep Developement</td>
+                   <td>Octobre 12,2019</td>
+                   <td><button type="button" class="btn btn blue accent-4">Details</button></td>
+                 </tr>
+                 <tr>
+                   <th scope="row">5</th>
+                   <td>PostFive</td>
+                   <td>Tech Gadgets</td>
+                   <td>Avril 13,2022</td>
+                   <td><button type="button" class="btn btn blue accent-4">Details</button></td>
+                 </tr>
+                 <tr class="grey lighten-5">
+                   <th scope="row">6</th>
+                   <td>Post Six</td>
+                   <td>Tech Gadgets</td>
+                   <td>Janvier 45,2022</td>
+                   <td><button type="button " class="btn btn blue accent-4 " >Details</button></td>
+                 </tr>
+               </tbody>
+               </table>
+               <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active blue accent-4"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!"class="blue-text lighten-1">2</a></li>
+                <li class="waves-effect"><a href="#!"class="blue-text lighten-1">3</a></li>
+                <li class="waves-effect"><a href="#!"class="blue-text lighten-1">4</a></li>
+                <li class="waves-effect"><a href="#!"class="blue-text lighten-1">5</a></li>
+                <li class="waves-effect"><a href="#!"class="blue-text lighten-1"><i class="material-icons"class="blue-text lighten-1"class="blue-text lighten-1">chevron_right</i></a></li>
+              </ul>
+               </div>
+             </div>
+             
+                      
+            </div>
+             
+           
+          
+              </div>
+          </div>
+   
+       </section>
+     
+     
+      <!--------------------footer------------------------------------->
+      <section >
+        <div class="container-fluid blue accent-4 ">
+          <div class="row py-5">
+            <div class="col-12 col-6 white-text center ">
+              <P class="text-white">MyAdmin codeloccol Copyright © 2022 By Ilazan</P>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+        $(document).ready(function(){
+    $('.sidenav').sidenav();
+    }   );
+        $(document).ready(function () {
+          $('.tabs').tabs();
+        });
+    
+    
+        $(document).ready(function () {
+          $('input.autocomplete').autocomplete({
+            data: {
+              "Professional developer": null,
+              "Manager": null,
+              "Student": 'https://placehold.it/250x250'
+            },
+          });
+        });
+    
+    
+        $(document).ready(function(){
+        $('.modal').modal();
+      });
+    
+      </script>
+<script>
+  const labels = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Daily Visitors',
+      backgroundColor: 'rgb(16, 16, 223)',
+      borderColor: 'rgb(16, 16, 223)',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+
+  const config = {
+    type: 'line',
+    data: data,
+    options: {}
+  };
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <script>
+      const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+    </script>
+    
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>

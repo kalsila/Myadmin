@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyAdmin</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!----------  font awesone-------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
+
+</head>
+
+<body>
+  <!----------------------nav--------------->
+<section>
+  <div class="navbar-fixed  blue accent-4  ">
+    <nav class="nav-warper  blue accent-4 ">
+      <div class="container">
+        <a href="#" class="brand-logo">MyAdmin</a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="Posts.html">Posts</a></li>
+        <li><a href="Categories.html">Categories</a></li>
+        <li><a href="Comments.html">Comments</a></li>
+        <li><a href="Users.html">Users</a></li>
+        <li>
+          <a href="#" data-target="slide-out" class="sidenav-trigger  text-cyan "><i class="material-icons">menu</i></a>
+        </li>
+  
+      </ul>
+    </nav>
+  </div>
+    
+
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="AV1.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+        <a href="#name"><span class="white-text name">Kalsila</span></a>
+        <a href="#email"><span class="white-text email">Kalsisi@gmail.com</span></a>
+      </div></li>
+      <li><a href="#"><i class="material-icons">cloud</i>Dashboard</a></li>
+      <li><a href="Posts.html">Posts</a></li>
+      <li><a href="Categories.html">Categories</a></li>
+      <li><a href="Comments.html">Comments</a></li>
+      <li><a href="Users.html">Users</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader"></a>Account Controls</li>
+      <li><a class="subheader"></a>Account Controls</li>
+      <li><a class="subheader"></a></li>
+      <li><a class="waves-effect" href="#!">Logout</a></li>
+    </ul>
+      </section>
+      <!-----------------------cardssect-------------------------------->
+      <section id="Dasboard">
+            <div class="row">
+              <div class="col s12 m3">
+                <div class="card-panel blue white-text center">
+                  <i class="fa-regular fa-face-smile medium"></i> <br>
+                  <h4>Monthly</h4>
+                  <h4>35900</h4>
+                  <div class="progress">
+                    <div class="determinate" style="width: 70%"></div>
+                </div>
+                </div>
+              </div>
+              <div class="col s12 m3">
+                <div class="card-panel black-text center">
+                  <i class="fa-solid fa-pen medium"></i> <br>
+                  <h4>Blog Posts</h4>
+                  <h4>207</h4>
+                  <div class="progress">
+                    <div class="determinate" style="width: 50%"></div>
+                </div>
+                  
+                </div>
+              </div>
+              <div class="col s12 m3">
+                <div class="card-panel blue white-text center ">
+                  <i class="fa-solid fa-folder medium"></i> <br>
+                  <h4>Comments</h4>
+                  <h4>2300</h4>
+                  <div class="progress">
+                    <div class="determinate" style="width: 60%"></div>
+                </div>
+                </div>
+              </div>
+              <div class="col s12 m3">
+                <div class="card-panel black-text center ">
+                  <i class="fa-solid fa-user-group medium"></i> <br>
+                  <h4>Users</h4>
+                  <h4>410</h4>
+                  <div class="progress">
+                    <div class="determinate" style="width: 30%"></div>
+                </div>
+                  
+                </div>
+              </div>
+            </div>
+      </section>
+      <!-----------------------------------progress-------------------------->
+      <section>
+          <div class="row light-blue lighten-2 ">
+            <div class="col s12 m8">
+             <div class="card">
+              <canvas id="myChart" style="width: 100% important;"></canvas>
+             </div>
+
+            </div>
+            <div class="col s12 m4" >
+                 <div class="card" style="width: 100%;">
+                  <ul class="collection">
+                    <li class="collection-item avatar">
+                      <img src="AV1.jpg" alt="" class="circle">
+                      <p>Rachida Halidou </p><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cum.</p>
+                        <p><span class="teal-text" >Approve|</span><span class="red-text" > Deny</p></span>
+                     
+                      <a href="#!" class="secondary-content"></a>
+                    </li>
+                    <li class="collection-item avatar">
+                      <img src="AV2.png" alt="" class="circle">
+                      <p>Hadiza Hama </p><br>
+                        <p> ipsum dolor sit amet consectetur adipisicing elit. Sunt, cum.</p>
+                        <p><span class="teal-text" >Approve|</span><span class="red-text" > Deny</p></span>
+                     
+                      <a href="#!" class="secondary-content"></a>
+                    </li>
+                    <li class="collection-item avatar">
+                      <img src="AV1.jpg" alt="" class="circle">
+                      <p>Samira Kalla</p><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cum.</p>
+                       
+                        <p><span class="teal-text" >Approve|</span><span class="red-text" > Deny</p></span>
+                      <a href="#!" class="secondary-content"></a>
+                    </li>
+                  </ul>
+                 </div>
+            </div>
+          </div>
+      </section>
+      <!-----------todossssssssssssssss------------------------------------------>
+      <section>
+        <div class="row">
+          <div class="col s12 m8 card-panel">
+            <table class="striped" >
+              <thead>
+                <tr>
+                  <h3>Recents Posts</h3>
+                    <th>Title</th>
+                    <th>Category</th>
+                    
+                </tr>
+              </thead>
+      
+              <tbody>
+                <tr>
+                  <td>Post One</td>
+                  <td>Web Developement</td>
+                  <td><button type="button" class="btn btn blue accent-4"><a href="">Details</a></button></td></td>
+                </tr>
+                <tr>
+                  <td>Post Two</td>
+                  <td>Graphic Design</td>
+                  <td><button type="button" class="btn btn blue accent-4"><a href="">Details</a></button></td></td></td>
+                </tr>
+                <tr>
+                  <td>Post Three</td>
+                  <td>Web Developement</td>
+                  <td><button type="button" class="btn btn blue accent-4"><a href="">Details</a></button></td></td></td>
+                </tr>
+              </tbody>
+            </table>
+                  
+
+          </div>
+          <div class="col s12 m4">
+            
+            <ul class="collection with-header">
+              <li class="collection-header"><h4>Quick Todos</h4>
+                <div class="input-field ">
+                  <input value="Add todo..." id="first_name2" type="text" class="validate">
+                  <label class="active" for="first_name2"></label>
+                </div></li>
+              
+              <li class="collection-item"><div>Todo one<a href="#!" class="secondary-content"><i class="material-icons">clear</i></a></div></li>
+              <li class="collection-item"><div>Todo Two<a href="#!" class="secondary-content"><i class="material-icons">clear</i></a></div></li>
+              
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">add</i>
+        </a>
+        <ul>
+          
+          <li><a class="btn-floating blue modal-trigger" href="#modal1" ><i class="fa-solid fa-pencil"></i>format_quote</i></a>
+          <!-- Modal Structure1 -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      
+      <h4>Add Post</h4>
+      <div class="input-field">
+        <input class="placeholder" id="first_name" type="text" class="validate" >
+        <label for="first_name">Title</label>
+ 
+      </div> <div class="input-field">
+        <input class="placeholder" id="first_name" type="text" class="validate" >
+        <label for="first_name">Category</label> <br>
+        <p>Select option</p>
+      </div>
+      <div id="editor"></div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close blue accent-4 btn-flat white-text">Submit</a>
+    </div>
+  </div>
+          </li>
+
+
+          <li><a class="btn-floating blue modal-trigger " href="#modal2" ><i class="fa-solid fa-folder"></i>publish</i></a>
+          
+                 <!-- Modal Structure2 -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Add Category</h4>
+     <div class="input-field">
+       <input class="placeholder" id="first_name" type="text" class="validate" >
+       <label for="first_name">Title</label>
+
+     </div>
+     
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close blue accent-4 btn-flat white-text">Submit</a>
+    </div>
+  </div>
+          </li>
+          <li><a class="btn-floating blue  modal-trigger " href="#modal3" ><i class="fa-solid fa-user-group"></i>attach_file</i></a>
+                <!-- Modal Structure3 -->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Add User</h4>
+      <div class="input-field">
+        <input class="placeholder" id="first_name" type="text" class="validate" >
+        <label for="first_name">Name</label>
+        <div class="input-field">
+          <input class="placeholder" id="first_name" type="text" class="validate" >
+          <label for="first_name">Email</label>
+          <div class="input-field">
+            <input class="placeholder" id="first_name" type="text" class="validate" >
+            <label for="first_name">Password</label>
+            <div class="input-field">
+              <input class="placeholder" id="first_name" type="text" class="validate" >
+              <label for="first_name">Confirm Password</label>
+                
+     
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close blue accent-4 btn-flat white-text btn-flat">Submit</a>
+    </div>
+  </div> 
+          </li>
+        </ul>
+      </div>
+      <!--------------------footer------------------------------->
+      <section >
+        <div class="container-fluid blue accent-4">
+          <div class="row">
+            <div class="col-12 col-6 white-text center ">
+              <P class="text-white">MyAdmin codeloccol Copyright © 2022 By Ilazan</P>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+        $(document).ready(function(){
+    $('.sidenav').sidenav();
+    }   );
+        $(document).ready(function () {
+          $('.tabs').tabs();
+        });
+    
+    
+        $(document).ready(function () {
+          $('input.autocomplete').autocomplete({
+            data: {
+              "Professional developer": null,
+              "Manager": null,
+              "Student": 'https://placehold.it/250x250'
+            },
+          });
+        });
+    
+    
+        $(document).ready(function(){
+        $('.modal').modal();
+      });
+    
+      </script>
+<script>
+  const labels = [
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '10',
+    '11',
+    '1é',
+    
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Daily Visitors',
+      backgroundColor: 'rgb(16, 16, 223)',
+      borderColor: 'rgb(16, 16, 223)',
+      data: [550, 500, 450, 400, 500,550, 500, 450, 400, 500, ],
+    }]
+  };
+
+  const config = {
+    type: 'line',
+    data: data,
+    options: {}
+  };
+
+  
+</script>
+
+<script>
+  ClassicEditor
+      .create( document.querySelector( '#editor' ) )
+      .catch( error => {
+          console.error( error );
+      } );
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <script>
+      const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+
+
+      $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+    </script>
+    
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>
